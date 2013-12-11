@@ -1,0 +1,17 @@
+This is a python module for easy conversion to and from binary formats. There
+are several functions contained in the module as outlined below.
+
+itoc -- takes integer in range 0 to 255, outputs a single unsigned character
+        of the same value.
+ctoi -- the inverse function of itoc: takes unsigned char input, outputs an
+        integer in range 0 to 255.
+itos -- takes integer in range 0 to 255, outputs a string containing the 
+        hexadecimal representation of the integer.
+stoi -- takes a length 2 string in hexadecimal form, returns an integer in
+        the range 0 to 255.
+unpack -- reads a file of given name. Creates a text file containing a
+        a hexdump of the file with corresponding ascii representations
+pack -- the inverse function of unpack. This function turns a text file
+        of pairs of ascii characters in hexadecimal form and outputs a binary
+        file with corresponding bytes. All characters to the right of a ';'
+        are ignored.
