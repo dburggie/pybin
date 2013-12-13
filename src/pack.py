@@ -33,9 +33,12 @@ def _parse_line(line):
     
 
 
-def pack(if_name, of_name = 'output.bin'):
+def pack(if_name, of_name = None):
     """Packs text file of hex values into a binary file format."""
-
+    
+    if of_name == None:
+        of_name = if_name + '.b'
+    
     # open input file
     infile = open(if_name, 'r')
 

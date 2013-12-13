@@ -27,9 +27,11 @@ def _format_line(l):
     return s
 
 
-def unpack(if_name, of_name = 'output.b', width = 8):
+def unpack(if_name, of_name = None, width = 8):
     """Unpacks binary values in input_file to text in output_file."""
     
+    if of_name == None:
+        of_name = if_name + '.b'
     # read contents of file
     input_file = open(if_name, 'r')
     contents = input_file.read()
