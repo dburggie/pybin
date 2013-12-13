@@ -1,7 +1,7 @@
-from src.itoc import itoc
-from src.ctoi import ctoi
-from src.itos import itos
-from src.stoi import stoi
-from src.unpack import unpack
-from src.pack import pack
+from src import itoc
+from src import ctoi
+from src import itos
+from src import stoi
+from src import unpack
+from src import pack
 
